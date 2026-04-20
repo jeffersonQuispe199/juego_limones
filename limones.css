@@ -114,3 +114,12 @@ canvas {
 .botones button:active {
   transform: scale(0.95);
 }
+.logo-superior {
+  max-width: 200px; /* Ajusta el tamaño a tu gusto */
+  height: auto;
+  border-radius: 50%; /* Como tu logo es circular, esto ayuda a mantener la forma */
+  margin-bottom: 10px;
+  border: 2px solid #38bdf8;
+  box-shadow: 0 0 15px #38bdf8; /* Brillo de neón azul */
+  display: inline-block;
+}
