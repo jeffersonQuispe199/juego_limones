@@ -1,32 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Jefferson Quispe </title>
-<link rel="stylesheet" href="limones.css">
-<script src="utils.js"></script>
+  <meta charset="UTF-8">
+  <title>Limones Espaciales - Jefferson Quispe</title>
+  <link rel="stylesheet" href="limones.css">
+  <script src="utils.js"></script>
 </head>
 <body onload="iniciar();">
   <div class="contenedor">
-    <h1>Atrapar Limones</h1>
-    <p>Si del cielo te caen limones ..... </p>
-    <h2>Autor: JEFFERSON QUISPE</h2>
+    <header>
+      <h1>ATRAPAR LIMONES</h1>
+      <p style="font-style: italic; color: #94a3b8;">"Si del cielo te caen limones... ¡atrápalos en el espacio!"</p>
+    </header>
+
     <canvas id="areaJuego" width="600" height="400"></canvas>
+
     <div class="panel">
-      
       <p>Puntaje: <span id="txtPuntaje">0</span></p>
       <p>Vidas: <span id="txtVidas">3</span></p>
+    </div>
 
-    </div>
     <div class="botones">
-      <button onclick="moverIzquierda();">Izquierda</button>
-      <button onclick="moverDerecha();"> Derecha</button>
-      <button onclick="bajarLimon();">Bajar Limones</button>
-     
-      <button onclick="reiniciar();">Reiniciar</button>
+      <button onclick="moverIzquierda();">⬅ Izquierda</button>
+      <button onclick="moverDerecha();">Derecha ➡</button>
+      <button onclick="bajarLimon();" style="border-color: #fde047; color: #fde047; box-shadow: 0 0 5px #fde047;">Bajar Limones</button>
+      <button onclick="reiniciar();" style="border-color: #ef4444; color: #ef4444; box-shadow: 0 0 5px #ef4444;">Reiniciar</button>
     </div>
+
+    <footer>
+      <h2>COMMANDER: JEFFERSON QUISPE</h2>
+    </footer>
   </div>
   <script src="limones.js"></script>
-
-
 </body>
 </html>
